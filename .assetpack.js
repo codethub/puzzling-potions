@@ -23,7 +23,7 @@ export default {
             outputs: [
                 {
                     formats: ['.mp3'],
-                    recompress: true, // mp3转mp3也压缩
+                    recompress: true, 
                     options: {
                         // audioBitrate: 96,
                         // audioChannels: 1,

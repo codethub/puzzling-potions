@@ -5,5 +5,5 @@ export default defineConfig({
         port: 5000,
         open: true,
     },
-    base: "pixi-game-match3",
+    base: "game",
 })
