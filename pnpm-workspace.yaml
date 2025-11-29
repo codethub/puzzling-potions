@@ -1,0 +1,9 @@
+onlyBuiltDependencies:
+  - '@ffmpeg-installer/linux-x64'
+  - '@reown/appkit'
+  - bufferutil
+  - cpu-features
+  - esbuild
+  - sharp
+  - ttf2woff2
+  - utf-8-validate
