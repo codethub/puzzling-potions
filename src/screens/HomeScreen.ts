@@ -10,6 +10,8 @@ import { Logo } from '../ui/Logo';
 import { Dragon } from '../ui/Dragon';
 import { RippleButton } from '../ui/RippleButton';
 
+
+
 /** Custom ease curve for y animation of the base to reveal the screen */
 const easeSoftBackOut = registerCustomEase(
     'M0,0,C0,0,0.05,0.228,0.09,0.373,0.12,0.484,0.139,0.547,0.18,0.654,0.211,0.737,0.235,0.785,0.275,0.864,0.291,0.896,0.303,0.915,0.325,0.944,0.344,0.97,0.356,0.989,0.38,1.009,0.413,1.039,0.428,1.073,0.604,1.074,0.72,1.074,0.822,1.035,0.91,1.011,0.943,1.002,1,1,1,1',
