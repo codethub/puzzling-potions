@@ -12,7 +12,7 @@ export class LoadScreen extends Container {
     constructor() {
         super();
 
-        this.message = new Text("正在加载...", {
+        this.message = new Text("Loading...", {
             fill: 0x333333,
             align: "center",
         });
@@ -35,7 +35,7 @@ export class LoadScreen extends Container {
     /** Hide screen with animations */
     public async hide() {
         // Change then hide the loading message
-        this.message.text = "加载完毕,游戏即将开始~";
+        this.message.text = "Loading complete";
         await sleep(300);
         gsap.killTweensOf(this.message);
         gsap.to(this.message, {

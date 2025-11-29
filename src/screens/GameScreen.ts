@@ -40,19 +40,19 @@ export class GameScreen extends Container {
         this.gameContainer.name = "gameContainer";
         this.addChild(this.gameContainer);
 
-        // 棋盘
+        
         this.shelf = new Shelf();
         this.gameContainer.addChild(this.shelf);
 
-        // 分数
+        
         this.score = new GameScore();
         this.addChild(this.score);
 
-        // 锅
+        
         this.cauldron = new Cauldron(true);
         this.addChild(this.cauldron);
 
-        // 倒计时
+        
         this.timer = new GameTimer();
         this.cauldron.addContent(this.timer);
 
@@ -138,7 +138,7 @@ export class GameScreen extends Container {
         await this.cauldron.show();
         await this.countdown.hide(); // show Go
         this.score.show();
-        this.match3.startPlaying(); // 开始倒计时
+        this.match3.startPlaying(); 
     }
     async hide() {
         this.overtime.hide();

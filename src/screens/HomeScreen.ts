@@ -62,7 +62,7 @@ export class HomeScreen extends Container {
          });
         this.addChild(this.settingsButton);
 
-        this.playButton = new LargeButton({ text: "开始游戏" });
+        this.playButton = new LargeButton({ text: "Play" });
         this.playButton.onPress.connect(() => navigation.showScreen(GameScreen));
         this.addChild(this.playButton);
     }
