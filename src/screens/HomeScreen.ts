@@ -50,7 +50,7 @@ export class HomeScreen extends Container {
             image: 'icon-info',
             ripple: 'icon-info-stroke',
         });
-        this.infoButton.onPress.connect(() => window.open("https://juejin.cn/post/7264471246662172727", "_blank"));
+        this.infoButton.onPress.connect(() => window.open("https://github.com/codethub", "_blank"));
         this.addChild(this.infoButton);
 
         this.settingsButton = new RippleButton({
