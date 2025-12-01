@@ -99,12 +99,31 @@ export function App() {
         };
     }, []);
 
-    // Render a container div for the Pixi canvas
+    // Render a container div for the Pixi canvas and the Wallet Button
     return (
         <div 
             ref={appContainerRef} 
-            style={{ width: '100%', height: '100%', overflow: 'hidden' }} 
-        />
-        
+            // The container must be relative to anchor the absolute button
+            style={{ 
+                width: '100%', 
+                height: '100%', 
+                overflow: 'hidden', 
+                position: 'relative' 
+            }} 
+        >
+            {/* The Pixi canvas is appended to this div via useEffect */}
+            
+            {/* Reown Connect Button: positioned absolutely over the canvas */}
+            <div 
+                style={{ 
+                    position: 'absolute', 
+                    top: '10px', 
+                    right: '10px', 
+                    zIndex: 100 // Ensure visibility above Pixi canvas
+                }}
+            >
+                <appkit-button />
+            </div>
+        </div>
     );
 }

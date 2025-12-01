@@ -1,21 +1,24 @@
 // wagmi.ts
 
-import { createAppKit } from "@reown/appkit";
-import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
-import { mainnet } from "@reown/appkit/networks";
 
-const projectId = "e92cd95903697faa0452d626c1b1a673";
+// wagmi.ts
+
+import { createAppKit } from "@reown/appkit/react";
+import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
+import { celo } from "@reown/appkit/networks";
+
+const projectId = "cd169b99d42633d1d81f5aee613d0eed";
 
 export const wagmiAdapter = new WagmiAdapter({
   projectId,
-  networks: [mainnet],
+  networks: [celo],
   ssr: true,
   connectors: [],
 });
 
-export const appkitInstance = createAppKit({
+createAppKit({
   adapters: [wagmiAdapter],
-  networks: [mainnet],
+  networks: [celo],
   projectId,
   metadata: {
     name: "Puzzling Potions",
@@ -27,3 +30,4 @@ export const appkitInstance = createAppKit({
 });
 
 export const config = wagmiAdapter.wagmiConfig;
+
