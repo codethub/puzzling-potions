@@ -12,20 +12,20 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "ISC", 
   "dependencies": {
     "@pixi/sound": "^5.2.0",
     "@pixi/ui": "0.5.0",
     "@reown/appkit": "^1.8.14",
     "@reown/appkit-adapter-wagmi": "^1.8.14",
     "@tanstack/react-query": "^5.90.11",
-    "@types/react": "^19.2.7",
-    "@types/react-dom": "^19.2.3",
+    "@types/react": "^18.2.0", 
+    "@types/react-dom": "^18.2.0", 
     "gsap": "^3.12.2",
     "pixi-spine": "^4.0.4",
     "pixi.js": "^7.2.4",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "react": "^18.2.0", 
+    "react-dom": "^18.2.0", 
     "viem": "^2.40.3",
     "wagmi": "^3.0.2"
   },
@@ -37,6 +37,7 @@
     "@assetpack/plugin-manifest": "^0.7.0",
     "@assetpack/plugin-texture-packer": "^0.7.0",
     "@assetpack/plugin-webfont": "^0.7.0",
+    "@vitejs/plugin-react": "^4.0.4", 
     "vite": "^4.4.8"
   }
 }
